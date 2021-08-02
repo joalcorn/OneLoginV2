@@ -1,0 +1,3 @@
+@{
+    ApiCredSecretName = 'OneLoginAPI'
+}

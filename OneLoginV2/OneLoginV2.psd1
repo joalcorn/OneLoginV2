@@ -9,16 +9,18 @@
     ModuleVersion = '0.0.1'
     GUID = 'c750dc3b-6c28-4eef-9939-a9defbbeea0b'
     Author = 'Joe Alcorn'
-    CompanyName = ''
+    CompanyName = 'PLNU'
     Copyright = '(c) Joe Alcorn. All rights reserved.'
     Description = 'A module to interact with OneLogin''s V2 APIs'
-    FunctionsToExport = @(
-        'Connect-OneLogin'
-        'Set-OneLoginConnectionDefaults'
+    RootModule = 'OneLoginV2.psm1'
+    RequiredModules = @(
+        'Microsoft.PowerShell.SecretManagement'
+        'Configuration'
     )
-    CmdletsToExport = @()
-    VariablesToExport = '*'
-    AliasesToExport = @()
+    #FunctionsToExport = '*'
+    #CmdletsToExport = @()
+    #VariablesToExport = '*'
+    #AliasesToExport = @()
     PrivateData = @{
         PSData = @{
             Tags = "OneLogin","REST"
